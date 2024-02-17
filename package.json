@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "npm run build:lib && npm run build:demo",
+    "postbuild:lib": "copy README.md dist/ngx-intl-tel-input",
     "build:lib": "ng build ngx-intl-tel-input",
     "build:demo": "ng build demo-app",
     "watch": "ng build --watch --configuration development",
